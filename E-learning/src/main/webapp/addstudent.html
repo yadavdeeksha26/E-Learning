@@ -1,0 +1,85 @@
+<html>
+<head>
+<meta harset="ISO-8859-1">
+<title>Add Student</title>
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {   
+  opacity: 1;  
+}  
+</style> 
+</head>
+<body>
+
+<div class="center">
+  <h1>Add Student</h1>
+
+  <form action="addstudent.jsp">
+  <span>Enter ID</span>
+    <div class="inputbox">
+      <input type="text" name="id"required="required">
+      
+    </div>
+    <span>Enter Name</span>
+      <div class="inputbox">
+      <input type="text" name="name"required="required">
+      
+    </div>
+    <div class="">
+     <span>Enter Course</span><br>
+      <input type="checkbox" name="course" value="java">Java<br>
+      <input type="checkbox" name="course" value="Python">Python<br>
+      <input type="checkbox" name="course" value="PhP">PHP<br>
+      <input type="checkbox" name="course" value="C++">C++<br>
+      
+    </div>
+     <span>Enter Place</span>
+    <div class="inputbox">
+      <input type="text" name="place"required="required">
+     
+    </div>
+ 
+    <div class="inputbox" >
+      <input type="submit" class="button" value="Submit"><br>
+    </div>
+  </form>
+</div>
+</body>
+</html>
